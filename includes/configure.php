@@ -14,9 +14,8 @@
 // Define the webserver and path parameters
   // HTTP_SERVER is your Main webserver: eg-http://www.your_domain.com
   // HTTPS_SERVER is your Secure webserver: eg-https://www.your_domain.com
-//  define('HTTP_SERVER', 'https://www.anythinginabasket.com');
-  define('HTTPS_SERVER', 'https://www.anythinginabasket.com');
-define('HTTP_SERVER', 'http://www.anythinginabasket.com');
+  define('HTTPS_SERVER', 'https://');
+define('HTTP_SERVER', 'http://');
 
   // Use secure webserver for checkout procedure?
 define('ENABLE_SSL', 'true');
@@ -57,12 +56,9 @@ define('DIR_FS_CATALOG', '/usr/local/nginx/html/gift_baskets/');
   define('DB_TYPE', 'mysql');
   define('DB_PREFIX', '');
   define('DB_SERVER', 'localhost');
-//  define('DB_SERVER_USERNAME', 'anythi19_zencart');
-//  define('DB_SERVER_PASSWORD', '>KGUP(#*THSEIUHS');
-//  define('DB_DATABASE', 'anythi19_zencart');
-  define('DB_SERVER_USERNAME', 'root'); 
-  define('DB_SERVER_PASSWORD', 'my5qlpa55w0rd');
-  define('DB_DATABASE', 'gift_baskets');
+  define('DB_SERVER_USERNAME', ''); 
+  define('DB_SERVER_PASSWORD', '');
+  define('DB_DATABASE', '');
 
   define('USE_PCONNECT', 'false');
   define('STORE_SESSIONS', 'db');
@@ -74,8 +70,9 @@ define('DIR_FS_CATALOG', '/usr/local/nginx/html/gift_baskets/');
   // or webserver user has write privileges (chmod 666 or 777). We recommend using the "cache" folder inside the Zen Cart folder
   // ie: /path/to/your/webspace/public_html/zen/cache   -- leave no trailing slash  
   define('SQL_CACHE_METHOD', 'none'); 
-//  define('DIR_FS_SQL_CACHE', '/home/anythi19/public_html/gift_baskets/cache');
-define('DIR_FS_SQL_CACHE', '/usr/local/nginx/html/gift_baskets/cache');
+
+
+define('DIR_FS_SQL_CACHE', '/usr/local/nginx/html/<>/cache');
 
 
 

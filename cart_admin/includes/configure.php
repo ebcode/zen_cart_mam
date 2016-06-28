@@ -28,15 +28,11 @@
    * If you desire your *entire* admin to be SSL-protected, make sure you use a "https:" URL for all 4 of the following:
    */
 /*
-  define('HTTP_SERVER', 'https://anythinginabasket.com');
-  define('HTTPS_SERVER', 'https://anythinginabasket.com');
-  define('HTTP_CATALOG_SERVER', 'https://anythinginabasket.com');
-  define('HTTPS_CATALOG_SERVER', 'https://anythinginabasket.com');
 */
-  define('HTTP_SERVER', 'https://www.anythinginabasket.com');
-  define('HTTPS_SERVER', 'https://www.anythinginabasket.com');
-  define('HTTP_CATALOG_SERVER', 'https://www.anythinginabasket.com');
-  define('HTTPS_CATALOG_SERVER', 'https://www.anythinginabasket.com');
+  define('HTTP_SERVER', 'https://');
+  define('HTTPS_SERVER', 'https://');
+  define('HTTP_CATALOG_SERVER', 'https://');
+  define('HTTPS_CATALOG_SERVER', 'https://');
 
   // Use secure webserver for catalog module and/or admin areas?
   define('ENABLE_SSL_CATALOG', 'true');
@@ -65,10 +61,8 @@
 // * DIR_FS_* = Filesystem directories (local/physical)
   //the following path is a COMPLETE path to your Zen Cart files. eg: /var/www/vhost/accountname/public_html/store/
 
-//  define('DIR_FS_ADMIN', '/home/anythi19/public_html/gift_baskets/cart_admin/');
-//  define('DIR_FS_CATALOG', '/home/anythi19/public_html/gift_baskets/');
-  define('DIR_FS_ADMIN', '/usr/local/nginx/html/gift_baskets/cart_admin/');
-  define('DIR_FS_CATALOG', '/usr/local/nginx/html/gift_baskets/');
+  define('DIR_FS_ADMIN', '/usr/local/nginx/html/<>/cart_admin/');
+  define('DIR_FS_CATALOG', '/usr/local/nginx/html/<>/');
 
   define('DIR_FS_CATALOG_LANGUAGES', DIR_FS_CATALOG . 'includes/languages/');
   define('DIR_FS_CATALOG_IMAGES', DIR_FS_CATALOG . 'images/');
@@ -82,12 +76,10 @@
   define('DB_TYPE', 'mysql');
   define('DB_PREFIX', '');
   define('DB_SERVER', 'localhost');
-//  define('DB_SERVER_USERNAME', 'anythi19_zencart');
-//  define('DB_SERVER_PASSWORD', '>KGUP(#*THSEIUHS');
-//  define('DB_DATABASE', 'anythi19_zencart');
-  define('DB_SERVER_USERNAME', 'root');
-  define('DB_SERVER_PASSWORD', 'my5qlpa55w0rd');
-  define('DB_DATABASE', 'gift_baskets');
+
+  define('DB_SERVER_USERNAME', '');
+  define('DB_SERVER_PASSWORD', '');
+  define('DB_DATABASE', '');
 
   define('USE_PCONNECT', 'false');
   define('STORE_SESSIONS', 'db');
@@ -99,6 +91,6 @@
   // or webserver user has write privileges (chmod 666 or 777). We recommend using the "cache" folder inside the Zen Cart folder
   // ie: /path/to/your/webspace/public_html/zen/cache   -- leave no trailing slash  
   define('SQL_CACHE_METHOD', 'none'); 
-  define('DIR_FS_SQL_CACHE', '/usr/local/nginx/html/gift_baskets/cache');
+  define('DIR_FS_SQL_CACHE', '/usr/local/nginx/html/<>/cache');
 
 // EOF
