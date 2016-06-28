@@ -1,0 +1,147 @@
+/*
+body {  
+	behavior: url(includes/csshover.htc);
+	}
+*/
+/*green*/
+div#dropMenu li a:hover, div#dropMenu li.submenu li.submenu:hover {color: #000000!important;background:#ffcada;}
+
+
+/*blue
+div#dropMenu li a:hover, div#dropMenu li.submenu li.submenu:hover, div#dropMenu ul.level2 a:hover {color: #ffffff!important;background:#6C99D9;}
+*/ 
+
+/*red 
+div#dropMenu li a:hover, div#dropMenu li.submenu li.submenu:hover, div#dropMenu ul.level2 a:hover {color: #ffffff!important;background:#DC262E;}
+*/ 
+
+/*grey 
+div#dropMenu li a:hover, div#dropMenu li.submenu li.submenu:hover, div#dropMenu ul.level2 a:hover {color: #4f4f4f!important;background:#D5D5D5;}
+*/
+	
+div#dropMenu {
+	/* width:100%; */
+	margin:0 auto;
+    text-align:center;
+	z-index:1000;
+	position:relative;
+	}
+
+div#dropMenu ul {
+    margin:0;
+	padding:0;
+	}
+	
+div#dropMenu li {
+	position:relative;
+	list-style:none; 
+	margin:0; 
+	float:left; 
+	line-height:1em;
+	width:10.43em;
+	
+	/*width:16.649%;*/
+	font-size: 13px;
+    font-weight: bold;
+        
+    /* border-bottom:3px solid #e50f9f; */
+    
+	}
+	
+div#dropMenu ul.level1 {
+	width:100%;
+	margin:0 auto; 
+	text-align:center;
+	background:#ffcada; /*background color of top menu when NOT selected. */
+	z-index:1000;
+	float:left;
+	}
+
+div#dropMenu li a {
+	display: block;
+	/* Hides from IE5-mac \*/
+	
+	/*height: 1%;*/
+	/* End hide from IE5-mac */ 
+	 padding: .6em 0;
+	
+	text-decoration: none; 
+	/*
+	text-transform:uppercase; 
+	
+	border-top:2px solid #e50f9f;
+	border-left:2px solid #e50f9f;
+	border-right:2px solid #e50f9f;
+	border-collapse:collapse;
+	*/
+	color:#000000; 
+	text-align:center; 
+	}	
+	
+div#dropMenu li a:hover {
+	background:#ffffff;
+	}	
+	
+div#dropMenu li:hover {}
+/*div#dropMenu li.submenu {background: url(../images/dropmenu.gif) 95% 50% no-repeat;} */
+div#dropMenu li.submenu:hover {}
+
+/*
+div#dropMenu li a.noLine {border:none;}
+*/
+
+div#dropMenu>ul a {width: auto;z-index:1000;}
+div#dropMenu ul ul {display: none;}
+div#dropMenu ul ul li {width:10.43em;z-index:1000;}
+/*div#dropMenu li.submenu li.submenu {background: url(../images/submenu.gif) 95% 50% no-repeat;} */
+
+
+
+div#dropMenu ul.level1 li.submenu:hover ul.level2, 
+div#dropMenu ul.level2 li.submenu:hover ul.level3,
+div#dropMenu ul.level3 li.submenu:hover ul.level4,
+div#dropMenu ul.level4 li.submenu:hover ul.level5,
+div#dropMenu ul.level5 li.submenu:hover ul.level6,
+div#dropMenu ul.level6 li.submenu:hover ul.level7,
+div#dropMenu ul.level7 li.submenu:hover ul.level8 {position: absolute; width: 10.43em;display:block;z-index:1000;}
+
+
+div#dropMenu ul.level2 {background:#ffcada;z-index:1000;position:absolute; /*left:0; */}
+div#dropMenu ul.level3, 
+div#dropMenu ul.level4, 
+div#dropMenu ul.level5, 
+div#dropMenu ul.level6, 
+div#dropMenu ul.level7,
+div#dropMenu ul.level8{top: .5em; left: 10.43em; background:#ffcada}
+
+/*
+div#dropMenu ul.level2 a {
+	/*
+	padding: 0.5em 0 0.5em 0.25em;
+	
+	color: black; text-transform:none;
+	/* border:3px solid #e50f9f; */
+}  /* this is text color on drop-down submenu */
+
+div#dropMenu ul.level2 a:hover {color:#000000;}
+
+div#dropMenu ul.level2 a:hover {color:#000000;
+
+}
+
+.submenu{
+/*	
+border:3px solid yellow;	
+
+border-bottom:3px solid #e50f9f;
+border-left:2px solid #e50f9f;
+border-right:2px solid #e50f9f;
+*/
+}
+
+.clearBoth {
+	clear:both;
+	height:0;
+	font-size:0;
+	line-height:0;
+	}
